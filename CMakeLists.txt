@@ -225,23 +225,23 @@ if(BUILD_TESTING)
   )
 
   #### DATA TESTS #####
-#  ament_add_gtest(test_ekf_localization_node_bag1 test/test_localization_node_bag_pose_tester.cpp)
-#  target_link_libraries(test_ekf_localization_node_bag1 ${library_name})
+ ament_add_gtest(test_ekf_localization_node_bag1 test/test_localization_node_bag_pose_tester.cpp)
+ target_link_libraries(test_ekf_localization_node_bag1 ${library_name})
 
-#  ament_add_gtest(test_ekf_localization_node_bag2 test/test_localization_node_bag_pose_tester.cpp)
-#  target_link_libraries(test_ekf_localization_node_bag2 ${library_name})
+ ament_add_gtest(test_ekf_localization_node_bag2 test/test_localization_node_bag_pose_tester.cpp)
+ target_link_libraries(test_ekf_localization_node_bag2 ${library_name})
 
-#  ament_add_gtest(test_ekf_localization_node_bag3 test/test_localization_node_bag_pose_tester.cpp)
-#  target_link_libraries(test_ekf_localization_node_bag3 ${library_name})
+ ament_add_gtest(test_ekf_localization_node_bag3 test/test_localization_node_bag_pose_tester.cpp)
+ target_link_libraries(test_ekf_localization_node_bag3 ${library_name})
 
-#  ament_add_gtest(test_ukf_localization_node_bag1 test/test_localization_node_bag_pose_tester.cpp)
-#  target_link_libraries(test_ukf_localization_node_bag1 ${library_name})
+ ament_add_gtest(test_ukf_localization_node_bag1 test/test_localization_node_bag_pose_tester.cpp)
+ target_link_libraries(test_ukf_localization_node_bag1 ${library_name})
 
-#  ament_add_gtest(test_ukf_localization_node_bag2 test/test_localization_node_bag_pose_tester.cpp)
-#  target_link_libraries(test_ukf_localization_node_bag2 ${library_name})
+ ament_add_gtest(test_ukf_localization_node_bag2 test/test_localization_node_bag_pose_tester.cpp)
+ target_link_libraries(test_ukf_localization_node_bag2 ${library_name})
 
-#  ament_add_gtest(test_ukf_localization_node_bag3 test/test_localization_node_bag_pose_tester.cpp)
-#  target_link_libraries(test_ukf_localization_node_bag3 ${library_name})
+ ament_add_gtest(test_ukf_localization_node_bag3 test/test_localization_node_bag_pose_tester.cpp)
+ target_link_libraries(test_ukf_localization_node_bag3 ${library_name})
 
   #### RLE/RLL TESTS #####
   ament_add_gtest_executable(test_robot_localization_estimator
@@ -302,17 +302,17 @@ if(BUILD_TESTING)
     test_ekf_localization_node_interfaces
     test_ukf
     test_ukf_localization_node_interfaces
-    #test_ekf_localization_node_bag1
-    #test_ekf_localization_node_bag2
-    #test_ekf_localization_node_bag3
+    test_ekf_localization_node_bag1
+    test_ekf_localization_node_bag2
+    test_ekf_localization_node_bag3
     test_robot_localization_estimator
     test_navsat_conversions
     test_navsat_transform
     test_ros_robot_localization_listener
     test_ros_robot_localization_listener_publisher
-    #test_ukf_localization_node_bag1
-    #test_ukf_localization_node_bag2
-    #test_ukf_localization_node_bag3
+    test_ukf_localization_node_bag1
+    test_ukf_localization_node_bag2
+    test_ukf_localization_node_bag3
     DESTINATION lib/${PROJECT_NAME}
   )
 

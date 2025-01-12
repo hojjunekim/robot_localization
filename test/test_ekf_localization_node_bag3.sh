@@ -6,8 +6,8 @@
 
 $PWD = `pwd`
 echo "Current Working Directory = $PWD"
-ROS1_DISTRO=melodic
-ROS2_DISTRO=crystal
+ROS1_DISTRO=noetic
+ROS2_DISTRO=foxy
 echo "ROS1_DISTRO = $ROS1_DISTRO"
 echo "ROS2_DISTRO = $ROS2_DISTRO"
 

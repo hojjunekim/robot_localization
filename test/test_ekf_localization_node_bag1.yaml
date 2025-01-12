@@ -15,10 +15,10 @@ test_ekf_localization_node_bag1_ekf:
         transform_timeout: 0.0
         odom0: /husky_velocity_controller/odom
         imu0: /imu/data
-        odom0_config: [false,  false,  false,
-                       false, false, false,
-                       true, true, true,
-                       false, false, false,
+        odom0_config: [true,  true,  true,
+                       false, false, true,
+                       true, false, false,
+                       false, false, true,
                        false, false, false]
         imu0_config: [false, false, false,
                       true,  true,  true,
